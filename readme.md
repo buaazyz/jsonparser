@@ -1,6 +1,6 @@
 # my JSON parser
 
-imitate minilang to realize a simple json parser
+imitate a toy-language (compiler) to realize a simple JSON parser
 
 
 
@@ -21,7 +21,6 @@ atom -> STRING | INT |FLOAT
 
 
 
-
 ```
 
 
@@ -32,9 +31,16 @@ atom -> STRING | INT |FLOAT
 
 ## Process
 
-**begin on 2021.1.4**
+1）complete  lexer   
 
-1）complete  lexer    2021.1.4
+2）complete  parser
 
-2）complete  parser 2021.1.4
+3）complete interpreter
 
+
+
+
+
+## Display
+
+![image-20210105100235539](assets/image-20210105100235539.png)

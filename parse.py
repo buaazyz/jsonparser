@@ -94,7 +94,7 @@ class Parser(object):
 
             res.register_advance()
             self.advance()
-        print(self.current_token.type)
+
         return res.success(KvsNode(element_nodes,pos_begin, self.current_token.pos_end.copy()))
 
 

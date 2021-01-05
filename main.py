@@ -1,5 +1,6 @@
 from lexer import Lexer
 from parse import Parser
+from interpreter import Interpreter
 
 
 def run(fn, text):
@@ -8,10 +9,17 @@ def run(fn, text):
 
     if error:
         return '', error
-    # print(text)
+    print(text)
     print(tokens)
 
     parser = Parser(tokens)
     ast = parser.parse()
 
-    return ast.node, ''
+    print(ast.node)
+
+    interpreter_ = Interpreter()
+    res = interpreter_.visit(ast.node)
+
+    print(res['sites'][0]['url'])
+
+    return res, ''

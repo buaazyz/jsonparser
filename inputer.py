@@ -5,7 +5,7 @@ text = ''
 with open('test1.json','r') as f:
     lines = f.readlines()
     for l in lines:
-        l = l.strip()
+        # l = l.strip()
         text += l
 
 res, error = main.run('<file>', text)

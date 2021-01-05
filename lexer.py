@@ -28,7 +28,7 @@ class Lexer(object):
         tokenList = []
 
         while self.current_char != None:
-            if self.current_char in (' ', '\t'):
+            if self.current_char in (' ', '\t','\n'):
                 # 空格或制表符 跳过
                 self.advance()
             elif self.current_char in DIGITS:
